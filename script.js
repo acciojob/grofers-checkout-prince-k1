@@ -12,6 +12,7 @@ const getSum = () => {
 	})
 	let row = document.createElement('tr');
 	row.innerText = sum;
+	row.id = 'ans';
 	table.appendChild(row);
   
 };
