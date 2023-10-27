@@ -4,6 +4,15 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
+	const table = document.querySelector('table');
+	const price = document.querySelectorAll('.price');
+	let sum = 0;
+	price.forEach((item) => {
+		sum += parseInt(item.textContent);
+	})
+	let row = document.createElement('tr');
+	row.innerText = sum;
+	table.appendChild(row);
   
 };
 
